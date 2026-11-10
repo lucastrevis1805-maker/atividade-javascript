@@ -68,11 +68,11 @@ console.log("Área do terreno:", area, "metros.");
 console.log("===================================");
 
 const produto = 'lapis';
-const precoProduto = 1.50;
+let precoProduto = 1.50;
 
 const frete = false;
 
-const desconto = 0.90;
-const valorDescontado = precoProduto - desconto;
+const desconto = 0.10;
+const valorDescontado = precoProduto - desconto * precoProduto;
 
 console.log("Produto:", produto, "Preço com desconto:", valorDescontado, "Status do frete:", frete);
